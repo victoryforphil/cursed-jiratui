@@ -79,6 +79,7 @@ class CreateWorkItemFieldId(Enum):
     PARENT = 'parent'
     DUE_DATE = 'duedate'
     PRIORITY = 'priority'
+    SPRINT = 'sprint'
 
 
 SKIP_FIELDS = [
@@ -92,4 +93,5 @@ SKIP_FIELDS = [
 PROCESS_OPTIONAL_FIELDS: list[str] = [
     CreateWorkItemFieldId.DUE_DATE.value,
     CreateWorkItemFieldId.PRIORITY.value,
+    CreateWorkItemFieldId.SPRINT.value,
 ]
